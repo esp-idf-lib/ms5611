@@ -11,7 +11,7 @@ Driver for barometic pressure sensor MS5611-01BA03.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/ms5611^1.1.0
+idf.py add-dependency esp-idf-lib/ms5611^1.1.0
 ```
 
 ## Support
