@@ -15,5 +15,5 @@ menu "Example configuration"
                 Choose this when CSB pin is low.
     endchoice
 
-    rsource "../../../../devtools/Kconfig.i2c"
+    rsource "../../../Kconfig.i2c"
 endmenu
