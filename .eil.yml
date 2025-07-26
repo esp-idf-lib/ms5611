@@ -1,7 +1,7 @@
 ---
 name: ms5611
 description: Driver for barometic pressure sensor MS5611-01BA03
-version: 1.1.2
+version: 1.1.3
 groups:
   - pressure
   - temperature
