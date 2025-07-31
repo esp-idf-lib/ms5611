@@ -219,11 +219,11 @@ esp_err_t ms5611_get_sensor_data(ms5611_t *dev, int32_t *pressure, float *temper
     // Offset at actual temperature
     // OFF=OFF_t1 + TCO * dT = OFF_t1(C2) * 2^16 + (C4*dT)/2^7
     int64_t off = (int64_t)((int64_t)dev->config_data.off * 65536)
-        + (((int64_t)dev->config_data.tco * dt) / 128);
+                  + (((int64_t)dev->config_data.tco * dt) / 128);
     // Sensitivity at actual temperature
     // SENS=SENS_t1 + TCS *dT = SENS_t1(C1) *2^15 + (TCS(C3) *dT)/2^8
     int64_t sens = (int64_t)(((int64_t)dev->config_data.sens) * 32768)
-        + (((int64_t)dev->config_data.tcs * dt) / 256);
+                   + (((int64_t)dev->config_data.tcs * dt) / 256);
 
     // Set defaults for temp >= 2000
     int64_t t_2 = 0;
