@@ -16,6 +16,5 @@ resistors.
 
 ## Notes
 
-- `CONFIG_NEWLIB_LIBRARY_LEVEL_NORMAL` must be `y` on `esp8266`.
 - Choose I2C address under `Example configuration` in `menuconfig`. The default is
   `CONFIG_EXAMPLE_I2C_ADDRESS_HIGH` (`CSB` pin is high).
